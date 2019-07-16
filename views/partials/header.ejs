@@ -5,3 +5,10 @@
     <link rel='stylesheet' href='/stylesheets/style.css' />
 </head>
 <body>
+
+<ul class="topnav">
+    <li><a <% if (title === 'Home') { %>class="active" <% } %> href="/">Home</a></li>
+    <li><a <% if (title === 'About') { %>class="active" <% } %> href="/about">About</a></li>
+    <li><a <% if (title === 'Projects') { %>class="active" <% } %> href="/projects">Projects</a></li>
+    <li><a <% if (title === 'Contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
+</ul>
