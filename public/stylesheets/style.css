@@ -13,7 +13,7 @@ html {
 body {
   padding: 0;
   margin: 0;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 18px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
@@ -25,6 +25,13 @@ h1 {
   font-size: 60px;
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+hr {
+  height:2px;
+  border-width:0;
+  color:#333;
+  background-color:#333;
 }
 
 .container-01 {
@@ -50,9 +57,14 @@ h1 {
   font-size: 20px
 }
 
-/*#landing-paragraph {*/
-/*  margin: 40px 10px 25px 10px;*/
-/*}*/
+#landing-hr {
+  color:white;
+  background-color:white;
+}
+
+#landing-paragraph-button {
+  margin: 30px 10px 30px 10px;
+}
 
 #landing-button{
   display: block;
@@ -79,10 +91,6 @@ h1 {
   color: black;
 }
 
-#landing-paragraph-button {
-  margin: 30px 10px 30px 10px;
-}
-
 .header-other {
   margin: auto;
   width: 60%;
@@ -107,6 +115,7 @@ ul.topnav li a {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 14px;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -114,6 +123,7 @@ ul.topnav li a:hover:not(.active) {background-color: #111;}
 ul.topnav li a.active {
   background-color: #88e8f2;
   color: black;
+  /*font-weight: bold;*/
 }
 
 ul.topnav li.right {float: right;}
@@ -124,3 +134,47 @@ ul.topnav li.right {float: right;}
   #landing-header {top: 60%;}
 }
 
+/* Cards */
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  border-radius: 5px; /* 5px rounded corners */
+  margin-bottom: 15px;
+  color: white;
+  background-color: #666;
+}
+
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card:hover > .overlay {
+  width:100%;
+  height:100%;
+  position:absolute;
+  background-color:#000;
+  opacity:0.5;
+  border-radius:30px;
+}
+
+/* Add some padding inside the card container */
+.card-container {
+  padding: 2px 16px;
+}
+
+.card-container p {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+img {
+  border-radius: 5px 5px 0 0;
+}
+
+h4 {
+  margin-top: 5px;
+  margin-bottom: 0;
+}
