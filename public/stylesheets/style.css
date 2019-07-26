@@ -44,12 +44,6 @@ hr {
   margin-top: 30px;
 }
 
-.header-other {
-  margin: auto;
-  width: 60%;
-  text-align: center;
-}
-
 /* NAVBAR */
 
 div.topnav {
@@ -262,6 +256,19 @@ h4 {
 
 /* CONTACT */
 
+#contact-container {
+  /*margin: 40px auto 0 auto;*/
+  /*width: 60%;*/
+  /*text-align: center;*/
+  margin: 40px 0 0 100px;
+  width: 60%;
+  text-align: center;
+}
+
+#contact-container hr {
+  max-width: 600px;
+}
+
 /*.contact-title {*/
 /*  margin-top: 100px;*/
 /*  color: #fff;*/
@@ -283,6 +290,9 @@ h4 {
 /*  transition: all 4s ease-in-out;*/
 /*}*/
 
+.contact-form {
+  margin-top: 40px;
+}
 
 .form-control {
   width: 60%;
@@ -290,8 +300,8 @@ h4 {
   background: transparent;
   border: none;
   outline: none;
-  border-bottom: 1px solid #333;
-  color: #333;
+  border-bottom: 1px solid white;
+  color: white;
   font-size: 18px;
   margin-bottom: 16px;
 }
@@ -301,17 +311,69 @@ input {
 }
 
 .submit {
-  background: #ff5722;
-  border-color: transparent;
-  color: #fff;
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  height: 50px;
-  margin-top: 20px;
+  color: white;
+  background: transparent;
+  display: block;
+  width: 200px;
+  height: 51px;
+  padding: 0;
+  margin: 30px auto auto auto;
+  border-radius: 40px;
+  border: 2px solid white;
+  font-size: 20px
+}
+
+.submit:focus {
+  outline: 0;
 }
 
 .submit:hover {
-  background-color: #f44336;
+  color: rgb(243, 125, 132);
+  background-color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 700px) {
+  #contact-container {
+    margin: auto;
+    width: 95%;
+  }
+  #contact-container hr {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #contact-container {
+    margin: auto;
+    width: 95%;
+  }
+}
+
+::placeholder {
+  color: white;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: white;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: white;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  /*border: 1px solid white;*/
+  -webkit-text-fill-color: white;
+  /*-webkit-box-shadow: 0 0 0px 1000px #000 inset;*/
+  transition: background-color 5000s ease-in-out 0s;
 }
