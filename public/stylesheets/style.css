@@ -103,38 +103,73 @@ text-align: center;
 
 /* Navbar */
 
-ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+div.topnav {
+  width: 40%;
+  margin: auto;
 }
 
-ul.topnav li {float: left;}
+ul.topnav {
+  list-style-type: none;
+  margin: 10px 0 0 0;
+  padding: 0;
+  overflow: hidden;
+  /*background-color: #333;*/
+}
+
+.nav-item {
+
+}
+
+ul.topnav li {
+  display: block;
+  width: 23%;
+  margin: 0 1% 0 1%;
+  float: left;
+  border-radius: 15px;
+  border: 2px solid white;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
 ul.topnav li a {
   display: block;
   color: white;
   text-align: center;
-  padding: 14px 16px;
+  padding: 14px 0;
   text-decoration: none;
   font-size: 14px;
+  border-radius: 12px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {
+  color: rgba(175, 215, 217);
+  background-color: white;
+}
 
 ul.topnav li a.active {
-  background-color: #88e8f2;
-  color: black;
+  background-color: white;
+  color: rgba(175, 215, 217);
   /*font-weight: bold;*/
 }
 
 ul.topnav li.right {float: right;}
 
+@media screen and (max-width: 1200px) {
+  div.topnav {width: 60%;}
+}
+
 @media screen and (max-width: 600px) {
-  ul.topnav li.right,
-  ul.topnav li {float: none;}
+  div.topnav {width: 100%;}
+  ul.topnav {margin: 0;}
+  ul.topnav li.right, ul.topnav li {float: none;}
+  ul.topnav li {
+    width: 100%;
+    margin: 0;
+  }
   #landing-header {top: 60%;}
 }
 

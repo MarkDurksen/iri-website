@@ -6,12 +6,13 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Squada+One&display=swap" rel="stylesheet">
 </head>
 <body>
-
-<ul class="topnav">
-    <li><a <% if (title === 'Home') { %>class="active" <% } %> href="/">Home</a></li>
-    <li><a <% if (title === 'About') { %>class="active" <% } %> href="/about">About</a></li>
-    <li><a <% if (title === 'Projects') { %>class="active" <% } %> href="/projects">Projects</a></li>
-    <li><a <% if (title === 'Contact') { %>class="active" <% } %> href="/contact">Contact</a></li>
-</ul>
+<div class="topnav">
+    <ul class="topnav">
+        <div class="nav-item"><li><a <% if (title === 'Home') { %>class="active" <% } %> href="/">Home</a></li></div>
+        <div class="nav-item"><li><a <% if (title === 'About') { %>class="active" <% } %> href="/about">About</a></li></div>
+        <div class="nav-item"><li><a <% if (title === 'Projects') { %>class="active" <% } %> href="/projects">Projects</a></li></div>
+        <div class="nav-item"><li><a <% if (title === 'Contact') { %>class="active" <% } %> href="/contact">Contact</a></li></div>
+    </ul>
+</div>
 
 <div class="container-01">
