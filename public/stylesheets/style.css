@@ -39,8 +39,8 @@ hr {
 }
 
 .container-01 {
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 5%;
+  margin-right: 5%;
   margin-top: 30px;
 }
 
@@ -177,10 +177,23 @@ color: rgb(243, 125, 132);
 }
 
 /* ABOUT */
-.about-container {
-  margin: auto;
+#about-container {
+  margin: 40px 0 0 100px;
   width: 60%;
   text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  #about-container {
+    margin: auto;
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  #about-container {
+    width: 95%;
+  }
 }
 
 /* PROJECTS */
