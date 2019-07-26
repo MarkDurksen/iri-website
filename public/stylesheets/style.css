@@ -5,12 +5,12 @@ html {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  background-color: #88e8f2;
+  /*background-color: #88e8f2;*/
   /*background-image: url("/images/lights.jpg");*/
   /*background-image: linear-gradient(#88e8f2, rgb(237, 253, 255, 0)), url(/images/lights.jpg);*/
   /*background-image: linear-gradient(#88e8f2, rgb(237, 253, 255));*/
   background-image: url("/images/iri-background-long.png");
-  background-repeat: no-repeat;
+  /*background-repeat: no-repeat;*/
 }
 
 body {
@@ -108,12 +108,19 @@ ul.topnav li.right {float: right;}
 @media screen and (max-width: 600px) {
   div.topnav {width: 100%;}
   ul.topnav {margin: 0;}
-  ul.topnav li.right, ul.topnav li {float: none;}
-  ul.topnav li {
+  ul.topnav li.right, ul.topnav li {
+    float: none;
+    border-radius: 0;
     width: 100%;
     margin: 0;
+    border-top: none;
   }
-  #landing-header {top: 60%;}
+  ul.topnav li a {
+    border-radius: 0;
+  }
+  html {
+    background-image: url("/images/iri-background-xlong.png");
+  }
 }
 
 /* LANDING */
@@ -168,6 +175,12 @@ background-color: white;
 
 #landing-button a:hover {
 color: rgb(243, 125, 132);
+}
+
+@media screen and (max-width: 600px) {
+  #landing-container {
+    margin-top: 40px;
+  }
 }
 
 /* ABOUT */
@@ -317,7 +330,7 @@ input {
   width: 200px;
   height: 51px;
   padding: 0;
-  margin: 30px auto auto auto;
+  margin: 30px auto 20px auto;
   border-radius: 40px;
   border: 2px solid white;
   font-size: 20px
