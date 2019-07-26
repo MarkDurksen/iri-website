@@ -8,7 +8,8 @@ html {
   background-color: #88e8f2;
   /*background-image: url("/images/lights.jpg");*/
   /*background-image: linear-gradient(#88e8f2, rgb(237, 253, 255, 0)), url(/images/lights.jpg);*/
-  background-image: linear-gradient(#88e8f2, rgb(237, 253, 255));
+  /*background-image: linear-gradient(#88e8f2, rgb(237, 253, 255));*/
+  background-image: url("/images/iri-background-long.png");
 background-repeat: no-repeat;
 }
 
