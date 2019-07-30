@@ -1,12 +1,12 @@
 {
   "name": "iri-website",
   "version": "0.0.0",
-  "private": true,
   "engines": {
     "node": "10.16.0"
   },
+  "private": true,
   "scripts": {
-    "start": "node ./bin/www",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
