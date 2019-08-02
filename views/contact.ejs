@@ -4,12 +4,14 @@
     <h1>Contact</h1>
     <hr>
     <p>Ask us a question, get a quote or just say hi!</p>
+    <p><%= msg %></p>
     <div class="contact-form">
-        <form id="contact-form" method="post" action=""></form>
-        <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
-        <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
-        <textarea name="message" class="form-control" placeholder="Message" required id="" rows="5"></textarea><br>
-        <input type="submit" class="submit" value="Send Message">
+        <form id="contact-form" method="post" action="send">
+            <input name="name" type="text" class="form-control" placeholder="Your Name" required><br>
+            <input name="email" type="email" class="form-control" placeholder="Your Email" required><br>
+            <textarea name="message" class="form-control" placeholder="Message" required id="" rows="5"></textarea><br>
+            <input type="submit" class="submit" value="Send Message">
+        </form>
     </div>
 </div>
 
